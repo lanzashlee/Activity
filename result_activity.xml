@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="#4F586A"
+    tools:context=".ResultActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/pinas" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:text="Hello Voters! You Voted For"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id = "@+id/textViewPresident"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="15dp"
+            android:background="#CD1126"
+            android:text="President:"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <TextView
+            android:id="@+id/textViewVicePresident"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:textSize="20dp"
+            android:background="#0038A7"
+            android:hint="Vice President:"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#CF3232"
+            android:onClick="goToVoting"
+            android:text="Exit"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>
